@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadores de Comparación</title>
+    <script>
+      // El operador de igualdad compara dos valores para ver si son iguales
+      let x = 5;
+      let y = "5";
+      console.log(x == y);
+
+      // El operador de igualdad estricta compara dos valores para ver si son iguales en valor y tipo
+      console.log(x === y);
+
+      // El operador de desigualdad verifica si dos valores no son iguales. No tiene en cuenta el tipo de datos.
+      let p = 10;
+      let q = "10";
+      console.log(p != q);
+
+      // Operadores Relacionales
+      let num1 = 8;
+      let num2 = 12;
+      console.log(num1 < num2);
+      console.log(num2 > num2);
+      console.log(num1 <= num2);
+      console.log(num1 >= num2);
+
+      // El operador typeof se utiliza para obtener el tipo de dato de un valor
+      let variable = "Hola";
+      console.log(typeof variable);
+
+      var contador = 11;
+      // Operador tenario para una condicion
+      var resultado = contador <= 10 ? 10 : 0;
+    </script>
+  </head>
+  <body>
+    <script>
+      document.write("Comparado: " + contador + "<br />");
+
+      document.write("Resultado: " + resultado + "<br />");
+    </script>
+  </body>
+</html>
