@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadores de String</title>
+    <script>
+      let nombre = "Juan";
+      let apellido = "Alcachofa";
+
+      let nombreCompleto = nombre + " " + apellido;
+      console.log(nombreCompleto);
+
+      let nombreCompletoConcat = nombre.concat(" ", apellido);
+      console.log(nombreCompletoConcat);
+
+      let mensaje = "Hola, mundo!";
+      let longitud = mensaje.length;
+      console.log(longitud);
+
+      let palabra = "Javascript";
+      let primerCaracter = palabra[4];
+      console.log(primerCaracter);
+
+      let texto = "Hola, mundo!!";
+      let mayusculas = texto.toUpperCase();
+      console.log(mayusculas);
+
+      let minusculas = texto.toLowerCase();
+      console.log(minusculas);
+
+      let frase = "El Javascript no es divertido.";
+      let posicion = frase.indexOf("l");
+      console.log(posicion);
+
+      let original = "Javascript no es poderoso.";
+      let subcadena = original.substring(0, 10);
+      console.log(subcadena);
+
+      let subcadenaDos = original.slice(11, 25);
+      console.log(subcadenaDos);
+    </script>
+  </head>
+  <body></body>
+</html>
