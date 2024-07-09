@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos - Javascript</title>
+    <script>
+      function saludar() {
+        alert("Hola!");
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="saludar()">Haz click</button>
+    <button id="miBoton">Haz click 2</button>
+    <button id="miBotonDos">Haz click 3</button>
+    <input type="text" id="miInput" />
+
+    <input type="text" id="miInputDos" />
+
+    <script>
+      document.getElementById("miBoton").addEventListener("click", function () {
+        alert("Hola!");
+      });
+
+      document
+        .getElementById("miBotonDos")
+        .addEventListener("click", function (evento) {
+          alert(
+            "Posocion del click: " + evento.clientX + ", " + evento.clientY
+          );
+        });
+
+      document
+        .getElementById("miInput")
+        .addEventListener("keydown", function (evento) {
+          console.log("Tecla presionada: " + evento.key);
+        });
+
+      document
+        .getElementById("miInputDos")
+        .addEventListener("change", function (evento) {
+          console.log("Valor cambiadop a: " + evento.target.value);
+        });
+
+      window.addEventListener("load", function () {
+        alert("Pagina completamente cargada.");
+      });
+    </script>
+  </body>
+</html>
