@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condicionales IF y ElSE en Javascript</title>
+    <script>
+      let edad = 18;
+
+      if (edad >= 18) {
+        console.log("Eres mayor de edad.");
+      } else {
+        console.log("Eres menor de edad.");
+      }
+
+      let hora = 10;
+
+      if (hora < 12) {
+        console.log("Buenos días.");
+      } else if (hora < 18) {
+        console.log("Buenas tardes.");
+      } else {
+        console.log("Buenas noches.");
+      }
+
+      let saldo = 500;
+      let compra = 300;
+
+      if (saldo >= compra) {
+        console.log("Compra realizada con exito.");
+
+        if (saldo - compra > 100) {
+          console.log("Todavia tienes saldo cómodo.");
+        } else {
+          console.log("Cuidado, estás cerca de tu límite.");
+        }
+      } else {
+        console.log("Saldo insuficiente.");
+      }
+
+      let esDiaLaboral = true;
+
+      let mensaje = esDiaLaboral
+        ? "Hoy es un día laboral"
+        : "Es fin de se,ana no laboral";
+      console.log(mensaje);
+
+      let valor = "v";
+
+      if (valor) {
+        console.log("El valor existe y es verdadero.");
+      } else {
+        console.log("El valor es falso o no existe");
+      }
+
+      let dato = null;
+
+      if (typeof dato == "number") {
+        console.log("Es un número.");
+      } else if (typeof dato == "string") {
+        console.log("Es una cadena de texto.");
+      } else {
+        console.log("Es de un tipo diferente.");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
