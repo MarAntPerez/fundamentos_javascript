@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let frutas = ["Manzana", "Banana", "Cereza"];
+
+      let colores = new Array("Rojo", "Verde", "Azul");
+
+      console.log(frutas[2]);
+      console.log(colores[1]);
+
+      frutas[1] = "Pera";
+      console.log(frutas);
+
+      console.log(frutas.length);
+
+      frutas.push("Naranja");
+      console.log(frutas);
+
+      let ultimoElemento = frutas.pop();
+      console.log(frutas);
+      console.log(ultimoElemento);
+
+      frutas.unshift("Kiwi");
+      console.log(frutas);
+
+      let primerElemento = frutas.shift();
+      console.log(frutas);
+      console.log(primerElemento);
+
+      let posicionCereza = frutas.indexOf("Cereza");
+      console.log(posicionCereza);
+
+      let copiaFrutas = frutas.slice(1, 3);
+      console.log(copiaFrutas);
+
+      frutas.splice(1, 2);
+      console.log(frutas);
+
+      frutas.splice(1, 0, "Uva", "Mango");
+      console.log(frutas);
+
+      frutas.forEach(function (fruta) {
+        console.log(fruta);
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
