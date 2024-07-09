@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funciones - Javascript</title>
+    <script>
+      function saludar() {
+        console.log("Hola, Mundo!");
+      }
+
+      saludar();
+
+      let sumar = function (a, b) {
+        return a + b;
+      };
+
+      let resultado = sumar(3, 5);
+      console.log(resultado);
+
+      let multiplicar = (a, b) => a * b;
+      resultado = multiplicar(4, 6);
+      console.log(resultado);
+
+      function saludar(nombre = "Invitado") {
+        console.log(`Hola, ${nombre}`);
+      }
+
+      saludar("Ana");
+      saludar("José");
+      saludar("Andrés");
+      saludar("Camilo");
+      saludar("Johan");
+    </script>
+  </head>
+  <body></body>
+</html>
