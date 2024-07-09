@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos - Javascript</title>
+    <script>
+      let persona = {
+        nombre: "Juan",
+        edad: 30,
+        soltero: true,
+        saludar: function () {
+          console.log("Hola!");
+        },
+      };
+
+      console.log(persona.nombre);
+      console.log(persona["edad"]);
+
+      console.log(persona);
+
+      persona.edad = 35;
+      persona["soltero"] = false;
+      console.log(persona);
+
+      persona.ciudad = "Lima";
+      delete persona.ciudad;
+      console.log(persona);
+
+      persona.saludar();
+
+      for (let clave in persona) {
+        console.log(clave + " : " + persona[clave]);
+      }
+
+      let coche = {
+        marca: "Toyota",
+        modelo: "Corolla",
+        detalles: {
+          color: "Azul",
+          anio: 2024,
+        },
+      };
+
+      console.log(coche);
+      console.log(coche.detalles.color);
+
+      let otraPersona = persona;
+      otraPersona.nombre = "María";
+      console.log(persona.nombre);
+    </script>
+  </head>
+  <body></body>
+</html>
