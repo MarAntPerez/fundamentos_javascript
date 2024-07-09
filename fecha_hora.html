@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fecha y Hora - Javascript</title>
+    <script>
+      let fechaActual = new Date();
+      console.log(fechaActual);
+
+      let fechaEpoca = new Date(1620000000000);
+      console.log(fechaEpoca);
+
+      let fechaString = new Date("2022-05-03T12:30:00");
+      console.log(fechaString);
+
+      let fecha = new Date();
+      let anio = fecha.getFullYear();
+      console.log(anio);
+
+      let mes = fecha.getMonth();
+      console.log(mes);
+
+      let dia = fecha.getDate();
+      console.log(dia);
+
+      let hora = fecha.getHours();
+      console.log(hora);
+
+      let minutos = fecha.getMinutes();
+      console.log(minutos);
+
+      let segundos = fecha.getSeconds();
+      console.log(segundos);
+
+      let FechaInicial = new Date();
+      let formatoFecha = FechaInicial.toDateString();
+      console.log(formatoFecha);
+
+      let formatoHora = FechaInicial.toTimeString();
+      console.log(formatoHora);
+
+      let formatoPersonalizado = FechaInicial.toLocaleString();
+      console.log(formatoPersonalizado);
+
+      let fechaUno = new Date();
+      let unDiaDespues = new Date(fechaUno.getTime() + 24 * 60 * 60 * 1000);
+      console.log(unDiaDespues);
+
+      let unMesDespues = new Date();
+      unMesDespues.setMonth(unMesDespues.getMonth() + 1);
+      console.log(unMesDespues);
+
+      let fechaDos = new Date("2023-12-11");
+      let fechaTres = new Date("2023-12-31");
+
+      let diferenciaEnMilisegundos = fechaDos - fechaUno;
+      console.log(diferenciaEnMilisegundos);
+
+      let diferenciaEnDias = diferenciaEnMilisegundos / (24 * 60 * 60 * 1000);
+      console.log(diferenciaEnDias);
+    </script>
+  </head>
+  <body></body>
+</html>
