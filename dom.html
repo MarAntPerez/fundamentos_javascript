@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom - Javascript</title>
+    <style>
+      .resaltado {
+        font-weight: bold;
+        background-color: brown;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="miTitulo">Hola, Mundo!</h1>
+    <div id="miContenedor"></div>
+    <p id="miParrafo">Este párrafo será eliminado.</p>
+
+    <script>
+      const titulo = document.getElementById("miTitulo");
+
+      titulo.textContent = "www.google.com";
+
+      titulo.style.color = "blue";
+
+      const nuevoDiv = document.createElement("div");
+
+      nuevoDiv.textContent = "Nuevo contenido";
+      nuevoDiv.style.backgroundColor = "yellow";
+
+      const contenedor = document.getElementById("miContenedor");
+      contenedor.appendChild(nuevoDiv);
+
+      const parrafo = document.getElementById("miParrafo");
+      parrafo.classList.add("resaltado");
+
+      parrafo.remove();
+    </script>
+  </body>
+</html>
