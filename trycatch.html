@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trycatch</title>
+  </head>
+  <body>
+    <script>
+      try {
+        let resultado = JSON.parse("texto no valido como JSON");
+        console.log(resultado);
+      } catch (error) {
+        console.log("Se produjo un error: " + error.message);
+      } finally {
+        console.log("Este bloque se ejecutara siempre.");
+      }
+    </script>
+  </body>
+</html>
