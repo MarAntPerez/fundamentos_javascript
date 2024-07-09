@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciclo For</title>
+    <script>
+      for (let i = 0; i < 5; i++) {
+        console.log(`Iteración ${i + 1}`);
+      }
+
+      let limite = 10;
+      let suma = 0;
+
+      for (let j = 1; j <= limite; j++) {
+        suma += j;
+      }
+
+      console.log(`La suma de los numeros del 1 al ${limite} es: ${suma}`);
+
+      let repeticiones = prompt("Ingrese el numero de repeticiones: ");
+      for (let k = 0; k < repeticiones; k++) {
+        console.log(`Iteración: ${k + 1}`);
+      }
+
+      for (let l = 2; l <= 10; l += 2) {
+        console.log(l);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

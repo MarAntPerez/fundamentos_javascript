@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciclo While y Do-While</title>
+    <script>
+      let contador = 0;
+
+      while (contador < 5) {
+        console.log(`Iteración: ${contador + 1}`);
+        contador++;
+      }
+
+      let respuesta;
+
+      do {
+        respuesta = prompt("¿Quieres continuar? (s/n)");
+      } while (respuesta.toLowerCase() === "s");
+    </script>
+  </head>
+  <body></body>
+</html>
