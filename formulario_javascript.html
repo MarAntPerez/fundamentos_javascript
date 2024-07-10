@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Accediendo a Elementos de un Formulario a Traves de Javascript
+    </title>
+  </head>
+  <body>
+    <form id="miFormulario">
+      <label for="nombre">Nombre: </label>
+      <input type="text" id="nombre" name="nombre" required />
+      <br />
+      <label for="correo">Correo: </label>
+      <input type="email" id="correo" name="correo" required />
+      <br />
+      <br />
+      <button type="button" onclick="mostrarDatos()">Mostrar Datos</button>
+    </form>
+
+    <script>
+      function mostrarDatos() {
+        const formulario = document.getElementById("miFormulario");
+        const nombreElemento = formulario.elements["nombre"];
+        const correoElemento = formulario.elements["correo"];
+
+        const nombre = nombreElemento.value;
+        const correo = correoElemento.value;
+
+        console.log("Nombre: ", nombre);
+        console.log("Correo: ", correo);
+
+        alert(`Nombre: ${nombre}\nCorreo: ${correo}`);
+      }
+    </script>
+  </body>
+</html>
